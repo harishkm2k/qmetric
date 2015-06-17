@@ -1,11 +1,13 @@
 
-package com.qmetric.kata.discount;
+package com.qmetric.kata.discount.impl;
 
 import static org.junit.Assert.*;
 
 import java.math.BigDecimal;
 
 import org.junit.Test;
+
+import com.qmetric.kata.discount.impl.FizzyDrinkDiscountRule;
 
 
 public class FizzyDrinkDiscountRuleTest {

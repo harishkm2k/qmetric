@@ -1,7 +1,9 @@
 
-package com.qmetric.kata.discount;
+package com.qmetric.kata.discount.impl;
 
 import java.math.BigDecimal;
+
+import com.qmetric.kata.discount.DiscountRule;
 
 
 /**
