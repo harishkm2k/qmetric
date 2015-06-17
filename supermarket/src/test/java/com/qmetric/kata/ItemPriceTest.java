@@ -7,6 +7,9 @@ import java.math.BigDecimal;
 
 import org.junit.Test;
 
+import com.qmetric.kata.domain.Item;
+import com.qmetric.kata.domain.ItemPrice;
+
 
 public class ItemPriceTest {
 

@@ -3,7 +3,7 @@ package com.qmetric.kata.order;
 
 import java.util.List;
 
-import com.qmetric.kata.ItemPurchased;
+import com.qmetric.kata.domain.ItemPurchased;
 
 
 /**

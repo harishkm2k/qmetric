@@ -4,7 +4,7 @@ package com.qmetric.kata.order.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.qmetric.kata.ItemPurchased;
+import com.qmetric.kata.domain.ItemPurchased;
 import com.qmetric.kata.order.Order;
 
 

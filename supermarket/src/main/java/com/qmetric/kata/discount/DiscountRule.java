@@ -3,7 +3,7 @@ package com.qmetric.kata.discount;
 
 import java.math.BigDecimal;
 
-import com.qmetric.kata.ItemPurchased;
+import com.qmetric.kata.domain.ItemPurchased;
 
 
 /**

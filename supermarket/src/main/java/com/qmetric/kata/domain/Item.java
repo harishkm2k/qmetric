@@ -1,5 +1,5 @@
 
-package com.qmetric.kata;
+package com.qmetric.kata.domain;
 /**
  * 
  * SINGE RESPONSIBLITY

@@ -6,8 +6,8 @@ import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
-import com.qmetric.kata.Item;
-import com.qmetric.kata.ItemPurchased;
+import com.qmetric.kata.domain.Item;
+import com.qmetric.kata.domain.ItemPurchased;
 import com.qmetric.kata.order.Order;
 
 

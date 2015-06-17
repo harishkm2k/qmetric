@@ -3,9 +3,9 @@ package com.qmetric.kata.discount.impl;
 
 import java.math.BigDecimal;
 
-import com.qmetric.kata.ItemPrice;
-import com.qmetric.kata.ItemPurchased;
 import com.qmetric.kata.discount.DiscountRule;
+import com.qmetric.kata.domain.ItemPrice;
+import com.qmetric.kata.domain.ItemPurchased;
 
 
 /**

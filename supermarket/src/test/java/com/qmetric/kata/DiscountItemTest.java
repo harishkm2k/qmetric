@@ -5,6 +5,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import com.qmetric.kata.domain.DiscountItem;
+import com.qmetric.kata.domain.Item;
+
 
 public class DiscountItemTest {
 
