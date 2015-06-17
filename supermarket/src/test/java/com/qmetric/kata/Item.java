@@ -1,34 +1,27 @@
 
 package com.qmetric.kata;
-
-import java.math.BigDecimal;
-
-
+/**
+ * Enum of Item
+ * 
+ * This enum has single responsibility to hold i.e just the list of items in the supermarket.
+ * 
+ * @author harish
+ *
+ */
 public enum Item {
-    APPLE(
-        "Apple", new BigDecimal(
-            .40)), BREAD(
-        "Bread", new BigDecimal(
-            1.25)), CHEESE(
-        "Cheese", new BigDecimal(
-            1.99)), FIZZY_DRINK(
-        "Fizzy Drink", new BigDecimal(
-            .70));
+    APPLE("Apple"),
+    BREAD("Bread"),
+    CHEESE("Cheese"),
+    FIZZY_DRINK("Fizzy Drink");
 
     private String name;
 
-    private BigDecimal price;
-
-    Item(String name, BigDecimal price) {
+    Item(String name) {
         this.name = name;
-        this.price = price;
     }
 
     public String getName() {
         return name;
     }
 
-    public BigDecimal getPrice() {
-        return price;
-    }
 }

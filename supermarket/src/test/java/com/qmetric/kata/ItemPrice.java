@@ -2,23 +2,27 @@
 package com.qmetric.kata;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
 
+/**
+ * This enum has single responsibility to hold i.e just the price list of items in the supermarket.
+ * 
+ * @author harish
+ *
+ */
+public enum ItemPrice {
+    APPLE(new BigDecimal(.40)),
+    BREAD(new BigDecimal(1.25)),
+    CHEESE(new BigDecimal(1.99)),
+    FIZZY_DRINK(new BigDecimal(.70));
 
-public class ItemPrice {
+    private BigDecimal price;
 
-    private HashMap<Item, BigDecimal> itemPriceMap;
-
-    ItemPrice() {
-        itemPriceMap = new HashMap<Item, BigDecimal>(
-            Item.values().length);
-        for (Item item : Item.values()) {
-            itemPriceMap.put(item, null);
-        }
+    ItemPrice(BigDecimal price) {
+        this.price = price;
     }
 
-    public HashMap<Item, BigDecimal> getItemPriceMap() {
-        return itemPriceMap;
+    public BigDecimal getPrice() {
+        return price;
     }
 
 }
