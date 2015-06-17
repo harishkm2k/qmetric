@@ -14,9 +14,9 @@ import java.math.BigDecimal;
  */
 public class AppleDiscountRule implements DiscountRule {
 
-    private static final int MINIMUM_NUMBER_OF_APPLES_ELIGIBLE_FOR_DISCOUNT = 3;
+    protected static final int MINIMUM_NUMBER_OF_APPLES_ELIGIBLE_FOR_DISCOUNT = 3;
 
-    private static final BigDecimal DISCOUNTED_PRICE_PER_APPLE = new BigDecimal(
+    protected static final BigDecimal DISCOUNTED_PRICE_PER_APPLE = new BigDecimal(
         0.33);
 
     public BigDecimal discountedValueOfAnItem() {
