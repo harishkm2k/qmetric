@@ -1,0 +1,28 @@
+
+package com.qmetric.kata.discount;
+
+import java.math.BigDecimal;
+
+
+/**
+ * INTERFACE SEGREGATION PRINCIPLE
+ * 
+ * As an implementing Class, this just returns the total price after the discounting calculated.
+ * 
+ * @author harish
+ * 
+ */
+public class AppleDiscountRule implements DiscountRule {
+
+    private static final int MINIMUM_NUMBER_OF_APPLES_ELIGIBLE_FOR_DISCOUNT = 3;
+
+    private static final BigDecimal DISCOUNTED_PRICE_PER_APPLE = new BigDecimal(
+        0.33);
+
+    public BigDecimal discountedValueOfAnItem() {
+        // If Apples are purchased and if discount is available
+        // then calculate the total cost of the apple
+        return null;
+    }
+
+}

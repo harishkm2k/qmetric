@@ -1,6 +1,9 @@
 
 package com.qmetric.kata;
 /**
+ * 
+ * SINGE RESPONSIBLITY
+ * 
  * Enum of Item
  * 
  * This enum has single responsibility to hold i.e just the list of items in the supermarket.

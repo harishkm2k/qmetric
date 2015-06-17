@@ -4,6 +4,9 @@ package com.qmetric.kata;
 import java.math.BigDecimal;
 
 /**
+ * 
+ * SINGE RESPONSIBLITY
+ * 
  * This enum has single responsibility to hold i.e just the price list of items in the supermarket.
  * 
  * @author harish
