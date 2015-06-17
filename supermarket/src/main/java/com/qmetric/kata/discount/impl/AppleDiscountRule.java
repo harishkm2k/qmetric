@@ -3,6 +3,8 @@ package com.qmetric.kata.discount.impl;
 
 import java.math.BigDecimal;
 
+import com.qmetric.kata.ItemPrice;
+import com.qmetric.kata.ItemPurchased;
 import com.qmetric.kata.discount.DiscountRule;
 
 
@@ -16,15 +18,27 @@ import com.qmetric.kata.discount.DiscountRule;
  */
 public class AppleDiscountRule implements DiscountRule {
 
-    protected static final int MINIMUM_NUMBER_OF_APPLES_ELIGIBLE_FOR_DISCOUNT = 3;
+    protected static final int MINIMUM_QUANITIY_ELIGIBLE_FOR_DISCOUNT = 3;
 
-    protected static final BigDecimal DISCOUNTED_PRICE_PER_APPLE = new BigDecimal(
+    protected static final BigDecimal DISCOUNTED_PRICE_PER_UNIT = new BigDecimal(
         0.33);
 
-    public BigDecimal discountedValueOfAnItem() {
-        // If Apples are purchased and if discount is available
-        // then calculate the total cost of the apple
-        return null;
-    }
+    public BigDecimal discountedValueOfAnItem(ItemPurchased itemPurchased) {
+        // If discount is available then calculate the total cost of the apples
+        if (itemPurchased.getQuantity() < MINIMUM_QUANITIY_ELIGIBLE_FOR_DISCOUNT) {
+            double total = itemPurchased.getQuantity() * ItemPrice.APPLE.getPrice().doubleValue();
+            return new BigDecimal(
+                total);
+        }
 
+        int remaining = itemPurchased.getQuantity() % MINIMUM_QUANITIY_ELIGIBLE_FOR_DISCOUNT;
+
+        double discounted =
+            (itemPurchased.getQuantity() - remaining) * DISCOUNTED_PRICE_PER_UNIT.doubleValue();
+
+        double nonDiscounted = remaining * ItemPrice.APPLE.getPrice().doubleValue();
+
+        return new BigDecimal(
+            discounted + nonDiscounted).setScale(2, BigDecimal.ROUND_UP);
+    }
 }

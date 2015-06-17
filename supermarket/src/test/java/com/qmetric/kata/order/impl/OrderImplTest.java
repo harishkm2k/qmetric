@@ -42,6 +42,6 @@ public class OrderImplTest {
         assertSame(Item.APPLE, order.getItemsPurchased().get(0).getItem());
 
         // Check if quantity of item in order is correct
-        assertEquals(10, order.getItemsPurchased().get(0).getQuantity().intValue());
+        assertEquals(10, order.getItemsPurchased().get(0).getQuantity());
     }
 }

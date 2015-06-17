@@ -13,9 +13,9 @@ public class ItemPurchased {
 
     private Item item;
 
-    private Integer quantity;
+    private int quantity;
 
-    public ItemPurchased(Item item, Integer quantity) {
+    public ItemPurchased(Item item, int quantity) {
         this.item = item;
         this.quantity = quantity;
     }
@@ -24,7 +24,7 @@ public class ItemPurchased {
         return item;
     }
 
-    public Integer getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 

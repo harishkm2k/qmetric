@@ -3,6 +3,8 @@ package com.qmetric.kata.discount;
 
 import java.math.BigDecimal;
 
+import com.qmetric.kata.ItemPurchased;
+
 
 /**
  * INTERFACE SEGREGATION PRINCIPLE
@@ -14,6 +16,6 @@ import java.math.BigDecimal;
  */
 public interface DiscountRule {
 
-    public BigDecimal discountedValueOfAnItem();
+    public BigDecimal discountedValueOfAnItem(ItemPurchased itemPurchased);
 
 }
