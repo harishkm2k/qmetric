@@ -1,0 +1,2 @@
+# qmetric
+Qmetric Code Kata
