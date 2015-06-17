@@ -11,7 +11,7 @@ public class ItemTest {
     private Item item;
 
     @Test
-    public void shouldCheckTotalItemsInTheSuperMarket() {
+    public void checkTotalItemsInTheSuperMarket() {
         assertEquals(4, item.values().length);
     }
 

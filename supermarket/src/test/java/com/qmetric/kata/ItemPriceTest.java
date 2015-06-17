@@ -15,7 +15,7 @@ public class ItemPriceTest {
     private ItemPrice itemPrice;
 
     @Test
-    public void shouldCheckTotalItemsInTheSuperMarket() {
+    public void checkTotalItemsInTheSuperMarket() {
         assertEquals(4, itemPrice.values().length);
     }
 
@@ -25,7 +25,7 @@ public class ItemPriceTest {
     }
 
     @Test
-    public void theItemInTheSuperMarketShouldHaveProperPrice() {
+    public void eachItemInTheSuperMarketShouldHaveAppropriatePrice() {
         assertEquals(new BigDecimal(
             0.40), itemPrice.APPLE.getPrice());
         assertEquals(new BigDecimal(
