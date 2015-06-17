@@ -10,30 +10,26 @@ import org.junit.Test;
 
 public class ItemPriceTest {
 
-    private Item item;
-
-    private ItemPrice itemPrice;
-
     @Test
     public void checkTotalItemsInTheSuperMarket() {
-        assertEquals(4, itemPrice.values().length);
+        assertEquals(4, ItemPrice.values().length);
     }
 
     @Test
-    public void eachItemInTheSuperMarketShouldHaveAPrice() {
-        assertEquals(item.values().length, itemPrice.values().length);
+    public void numberOfItemsAvailableInItemPriceShouldBeEqualToTotalItems() {
+        assertEquals(Item.values().length, ItemPrice.values().length);
     }
 
     @Test
-    public void eachItemInTheSuperMarketShouldHaveAppropriatePrice() {
+    public void itemsShouldHaveAppropriatePrice() {
         assertEquals(new BigDecimal(
-            0.40), itemPrice.APPLE.getPrice());
+            0.40), ItemPrice.APPLE.getPrice());
         assertEquals(new BigDecimal(
-            1.25), itemPrice.BREAD.getPrice());
+            1.25), ItemPrice.BREAD.getPrice());
         assertEquals(new BigDecimal(
-            1.99), itemPrice.CHEESE.getPrice());
+            1.99), ItemPrice.CHEESE.getPrice());
         assertEquals(new BigDecimal(
-            0.70), itemPrice.FIZZY_DRINK.getPrice());
+            0.70), ItemPrice.FIZZY_DRINK.getPrice());
     }
 
 }

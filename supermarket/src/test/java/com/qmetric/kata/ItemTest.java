@@ -8,11 +8,9 @@ import org.junit.Test;
 
 public class ItemTest {
 
-    private Item item;
-
     @Test
     public void checkTotalItemsInTheSuperMarket() {
-        assertEquals(4, item.values().length);
+        assertEquals(4, Item.values().length);
     }
 
 }
